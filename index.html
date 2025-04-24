@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gemini Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Optional: You can remove if you want pure CSS -->
+</head>
+<body>
+  <header>
+    Gemini Chatbot
+  </header>
+
+  <main id="messageHolder"></main>
+
+  <footer>
+    <input
+      id="chat"
+      type="text"
+      placeholder="Type your message..."
+      autocomplete="off"
+    />
+    <button id="btn">Send</button>
+  </footer>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
